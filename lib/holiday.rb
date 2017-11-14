@@ -69,7 +69,7 @@ def all_supplies_in_holidays(holiday_hash)
 
      h = holiday.to_s.split("_").collect {|h| h.capitalize}.join(" ")
       puts "  #{h}: #{materials.join(", ")}"
-  
+
       #binding.pry
 
       #puts "#{holiday.}: #{materials.}"
