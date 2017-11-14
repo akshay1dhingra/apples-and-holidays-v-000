@@ -83,12 +83,12 @@ def all_holidays_with_bbq(holiday_hash)
   # include the string "BBQ"
   bbq_holiday = []
   holiday_hash.each do |seasons, holidays|
-    holidays.collect do |holiday, material|
+    holidays.each do |holiday, material|
      if material.include? ("BBQ")
-       holiday
+       bbq_holiday << holiday
      end
     end
-    binding.pry
-  end
 
+  end
+bbq_holiday
 end
